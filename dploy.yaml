@@ -1,0 +1,25 @@
+app:
+    host: "hostname"
+    user: "user"
+    pass: "password"
+    exclude:
+            - "dploy.yaml"
+            - "**/config.rb"
+            - "**/*.sass"
+            - "**/*.scss"
+    include:
+            "bootstrap/compiled.php": "bootstrap/"
+    slots: 10
+    check: true
+
+vendor:
+    host: "hostname"
+    user: "user"
+    pass: "password"
+    path:
+            local: "vendor/"
+            remote: "vendor/"
+    include:
+            "vendor/**/*.*": "/"
+    slots: 10
+    check: true

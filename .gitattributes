@@ -1,0 +1,56 @@
+# By default, everything is text
+* text=auto
+
+# Be sure that text files are stored as text
+*.txt text
+*.bat text
+*.conf text
+*.crt text
+*.css text
+*.csv text
+*.htm text
+*.html text
+*.inc text
+*.ini text
+*.js text
+*.json text
+*.log text
+*.markdown text
+*.md text
+*.php text
+*.php4 text
+*.phpt text
+*.sh text
+*.sql text
+*.tpl text
+*.txt text
+*.wsdl text
+*.xml text
+*.xsl text
+*.yaml text
+*.yml text
+*.dist text
+*.in text
+*.key text
+*.map text
+*.mno text
+
+# Binaries are not text
+*.chdb binary
+*.db binary
+*.dll binary
+*.exe binary
+*.flf binary
+*.gif binary
+*.gz binary
+*.ico binary
+*.idx binary
+*.jpg binary
+*.pdf binary
+*.png binary
+*.ttf binary
+*.z binary
+*.swf binary
+*.dat binary
+*.lib binary
+*.phar binary

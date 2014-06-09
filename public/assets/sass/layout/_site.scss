@@ -1,0 +1,15 @@
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+    color: #999;
+}
+
+#logo{
+    @include bg('../images/laravel/logo.png', true);
+    display: block;
+    margin: 10px auto;
+}

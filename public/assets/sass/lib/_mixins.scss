@@ -1,0 +1,12 @@
+@mixin bg($file, $dimensions: false) {
+    background: url($file) no-repeat 0 0;
+
+    @if $dimensions {
+        @include image-dimensions($file);
+    }
+}
+
+@mixin image-dimensions($file) {
+    height: image-height($file);
+    width: image-width($file);
+}
