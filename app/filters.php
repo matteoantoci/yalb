@@ -13,7 +13,13 @@
 
 App::before(function($request)
 {
-    if (!ob_start("ob_gzhandler")) ob_start();
+	//
+});
+
+
+App::after(function($request, $response)
+{
+	//
 });
 
 /*
