@@ -123,8 +123,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
         //YALB
-        'Thapp\JitImage\JitImageServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Intervention\Image\ImageServiceProvider'
 	),
 
 	/*
@@ -193,7 +193,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
         //YALB
-        'JitImage'        => 'Thapp\JitImage\Facades\JitImage',
+        'Image' => 'Intervention\Image\Facades\Image'
 	),
 
 );

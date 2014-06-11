@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
         "php":">=5.4.0",
-        "thapp/jitimage": "dev-master",
+        "intervention/image": "2.*",
+        "intervention/imagecache": "2.*",
 		"laravel/framework": "4.2.*",
         "barryvdh/laravel-ide-helper": "1.*"
 	},
