@@ -3,10 +3,13 @@ version: 1
 strategy: fullsync
 excludes:
     - app/storage/
-    - uploads/
+    - public/uploads/
     - vendor/
 composer:
     # make sure composer runs after each push
     mode: always
     # make composer use install, not update
     method: install
+post-deploy:
+    script: app/console
+    args: ['cache:clear', '--env=prod', '--no-debug']
