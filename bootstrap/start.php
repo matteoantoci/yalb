@@ -28,7 +28,7 @@ $env = $app->detectEnvironment(
     //array('local' => array('homestead'),)
     function()
     {
-        if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost:8000'){
+        if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false){
             return 'local';
         }
 
