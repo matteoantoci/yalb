@@ -11,5 +11,5 @@ composer:
     # make composer use install, not update
     method: install
 post-deploy:
-    script: app/console
-    args: ['cache:clear', '--env=prod', '--no-debug']
+    script: artisan
+    args: ['cache:clear', '--env=prod']
