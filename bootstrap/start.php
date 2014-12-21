@@ -25,19 +25,8 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(
-    //array('local' => array('homestead'),)
-    function()
-    {
-        if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false){
-            return 'local';
-        }
 
-        if (array_key_exists('LARAVEL_ENV', $_SERVER)){
-            return $_SERVER['LARAVEL_ENV'];
-        }
-
-        return 'production';
-    }
+    [ 'local' => [ 'homestead' ] ]
 );
 
 /*
@@ -68,6 +57,17 @@ $framework = $app['path.base'].
                  '/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
+
+/*
+|--------------------------------------------------------------------------
+| IOC
+|--------------------------------------------------------------------------
+|
+| Here we will set all dependecies
+|
+*/
+
+require $app['path'] .'/ioc.php';
 
 /*
 |--------------------------------------------------------------------------
